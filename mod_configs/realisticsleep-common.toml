@@ -1,0 +1,28 @@
+#Defines what method of tick simulation to perform.  The default is 1.
+#  1 - Search and Tick (speed over precision)
+#  2 - World Tick (precision over speed)
+#Range: 1 ~ 2
+method = 1
+#A blacklist of what TileEntities that the Search and Tick method (method 1) will skip.
+blacklist = "minecraft:chest,minecraft:mob_spawner,quark:monster_box,mana-and-artifice:magelight,iceandfire:ghost_chest,minecraft:skull,mana-and-artifice:inscription_table_tile_entity,iceandfire:iaf_lectern,computercraft:speaker,computercraft:computer_advanced,computercraft:computer,mana-and-artifice:slipstream_generator,minecraft:trapped_chest"
+#Waiting time before players are allowed to sleep again and skip time in seconds.
+#Range: 5 ~ 1200
+waitTime = 250
+#The minimum amount of time in seconds that must be skipped before it's considered for extra tick processing.
+#Range: 1 ~ 1200
+minTime = 10
+#Defines if players that are sleeping are healed (if their hunger allows it) after waking up.
+healPlayers = true
+#Defines how much hunger it costs to heal 1/2 a heart (1 HP) if the above option is enabled.
+#Range: 0 ~ 10
+healCost = 2
+#Defines the amount of hunger that is taken away per minecraft hour slept (1000 ticks).
+#This is a minimum value.  For example, if it took 4 hunger to heal while this amount was 10, it would use 10 hunger.
+#However, if it took 14 to heal while this amount was 10, then the player would use 14 hunger.
+#The maximum hours a player can normally sleep through the night is roughly 11.35.
+#Range: 0.0 ~ 4.0
+hungerPerHour = 1.0
+#Defines the minimum amount of hunger that is always preserved so the player doesn't start dying of starvation upon waking up.
+#Range: 0 ~ 20
+hungerLimit = 6
+

@@ -1,0 +1,20 @@
+[
+  {
+    "uuid": "5422de1b-7841-4b8b-888e-7b9fc9467e9c",
+    "name": "6roundhog",
+    "level": 0,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "6dec7060-651a-46fe-a993-59e1e5e2f738",
+    "name": "Wolfbonbons",
+    "level": 0,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "426fdf59-5607-4232-beb6-189406003250",
+    "name": "Sidler2",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

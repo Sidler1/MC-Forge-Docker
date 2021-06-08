@@ -1,0 +1,20 @@
+version: "3.2"
+
+services:
+  mc-server:
+    image: sidler2/minecraft-forge:0.0.1
+    restart: always
+    volumes:
+      - ./logs:/etc/mc-server/logs
+      - ./mods:/etc/mc-server/mods
+      - ./mod_configs:/etc/mc-server/config
+      - ./UKS:/etc/mc-server/UKS
+      # Adding Config files
+      - ./configs/ops.json:/etc/mc-server/ops.json
+      - ./configs/server.properties:/etc/mc-server/server.properties
+      - ./configs/whitelist.json:/etc/mc-server/whitelist.json
+    ports:
+      - 25565:25565 # change your output port
+      - 25575:25575 # change your output port
+    entrypoint: ["/etc/mc-server/mcserver.sh"]
+
