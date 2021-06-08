@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM debian:stable-slim
 MAINTAINER Felix PewPew <sidler2@sidler2.com>
 RUN apt-get update
 RUN apt-get install -y default-jre
