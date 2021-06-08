@@ -5,3 +5,4 @@ git reset --hard
 git clean -fd
 git pull
 docker-compose -f ./docker-compose.yaml up -d
+chmod +x ./update.sh
