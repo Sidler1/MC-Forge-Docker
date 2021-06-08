@@ -2,7 +2,7 @@ version: "3.2"
 
 services:
   mc-server:
-    image: sidler2/minecraft-forge:0.0.1
+    image: sidler2/minecraft-forge:latest
     restart: always
     volumes:
       - ./logs:/etc/mc-server/logs
